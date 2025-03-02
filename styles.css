@@ -1,5 +1,5 @@
 html {
-    font-size: 10px !important;
+    font-size: 16px;
 }        
         
 h2 {
@@ -28,7 +28,7 @@ p {
 .nav-link {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.4rem !important;
+    font-size: 1rem !important;
     color: white !important;
     transition: color 0.3s ease-in-out;
     padding: 10px 20px;
@@ -72,7 +72,7 @@ p {
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 7rem;
+    font-size: 5rem;
     text-transform: uppercase;
     background: linear-gradient(90deg, rgba(12,12,12,1) 0%, rgba(255,240,31,1) 35%, rgba(250,15,50,1) 100%);
     background-size: 200% auto;
@@ -103,11 +103,11 @@ p {
 
 /* Responsive font sizes */
 .responsive-heading {
-    font-size: 6rem; /* Default size */
+    font-size: 4rem; /* Default size */
 }
 
 .responsive-text {
-    font-size: 1.6rem; /* Default paragraph size */
+    font-size: 1.2rem; /* Default paragraph size */
 }
 
 /* Adjust sizes on smaller screens */
@@ -118,7 +118,7 @@ p {
 
     .responsive-text {
         text-align: center;
-        font-size: 1.2rem; /* Smaller text */
+        font-size: 1rem; /* Smaller text */
         width: 90%;
     }
 
