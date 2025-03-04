@@ -1,0 +1,353 @@
+html {
+    font-size: 16px;
+}
+        
+h2 {
+    font-family: 'Montserrat', sans-serif !important; 
+    font-weight: 700 !important; /* Bold */ 
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: black;
+    padding: 20px 0;
+    height: 80px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adds spacing between nav-links */
+    width: 100%;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem !important;
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    color: yellow !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Makes the border (outline) white */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.navbar-collapse {
+    background-color: black; /* Makes dropdown menu background black */
+}
+
+.navbar.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("./img/airniugini.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(12,12,12,1) 0%, rgba(255,240,31,1) 35%, rgba(250,15,50,1) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flowingGradient 3s infinite linear;
+}
+
+@keyframes flowingGradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+
+/* About Section */
+
+#about {
+    min-height: 100vh;  /* Allows the section to expand based on content */
+    padding-bottom: 50px; /* Adds space below */
+}
+
+
+/* Responsive font sizes */
+.responsive-heading {
+    font-size: 4rem; /* Default size */
+}
+
+.responsive-text {
+    font-size: 1.2rem; /* Default paragraph size */
+}
+
+/* Adjust sizes on smaller screens */
+@media (max-width: 768px) {
+    .responsive-heading {
+        font-size: 4rem; /* Smaller heading */
+    }
+
+    .responsive-text {
+        text-align: center;
+        font-size: 1rem; /* Smaller text */
+        width: 90%;
+    }
+
+    /* Adds spacing between image & paragraph */
+    .about-section .col-12 img {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+/* Line Break */
+.section-divider {
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+}
+
+/* Vision Section */
+
+
+
+/* Desktop View */
+
+.vision-img {
+    width: 80%;
+    height: auto;
+
+}
+
+
+/* 🔥 Mobile Responsive Fix */
+@media (max-width: 768px) {
+    .vision-img {
+        display: block;
+        width: 100%;
+    }
+
+    /* Center the text when stacked */
+    #vision .row {
+        text-align: center;
+    }
+
+    #vision .col-lg-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #vision .col-lg-6 p {
+        max-width: 90%; /* Prevent text from stretching too wide */
+    }
+}
+
+/* Goals Section*/
+
+
+
+.goal-text {
+color: white;
+}
+
+.card-cover {
+border-color: white;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+.text-overlay {
+background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+border-radius: 10px;
+padding: 20px;
+}
+
+.icons {
+fill: white;
+}
+
+/* My Why */
+
+
+/* Reduce Image Size */
+.custom-img {
+width: 90%; /* Makes the image smaller */
+height: auto;
+}
+
+/* Align Paragraph with the Top of the Image */
+#my-why .d-flex {
+align-items: flex-start; /* Aligns paragraph with image top */
+}
+
+/* 🔥 Mobile Responsive Fix */
+@media (max-width: 768px) {
+    /* Center align text */
+    #my-why .row {
+        text-align: center;
+        justify-content: center; /* Ensures content stays centered */
+    }
+
+    /* Center align paragraph */
+    #my-why .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px; /* Adds space on both sides */
+    }
+
+    /* Ensure text does not stretch too wide */
+    #my-why p {
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto; /* Centers the text block */
+        padding: 0 10px; /* Adds spacing from the edges */
+    }
+
+    /* Add margin below the image to create space */
+    #my-why .custom-img {
+        margin-bottom: 60px; /* Adjust this value for the desired space */
+    }
+}
+
+
+/* Video Section */
+
+/* Video Container Styling */
+.video-container {
+position: relative;
+width: 100%;
+height: 100vh; /* Full screen height */
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Make the Video Cover the Entire Screen */
+.video-container video {
+width: 100%;
+height: 100vh;
+object-fit: cover;
+}
+
+
+.card-text {
+font-family: 'Fira Sans', sans-serif;
+}
+
+/* 🔥 Mobile Responsive Fix */
+@media (max-width: 768px) {
+#gallery h2 {
+    text-align: center;
+}    
+}
+
+/* Social Media Section */
+
+#social-med {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(220,220,220,1) 0%, rgba(255,240,31,1) 35%, rgba(250,15,50,1) 100%);
+    background-size: 200% auto;
+    animation: flowingGradient 5s infinite linear;
+}
+
+#social-med img {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    #social-med .container .row .col-4 a img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
+
+@keyframes flowingGradient {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the content */
+        text-align: center; /* Center the text */
+    }
+
+    /* Adjust the size of the logo */
+    footer .mb-3 img {
+        width: 50px; /* Reduce the size of the logo */
+    }
+
+    /* Adjust font size for the copyright text */
+    footer .text-body-secondary {
+        font-size: 14px; /* Smaller text */
+    }
+
+    /* Adjust spacing for the copyright text */
+    footer span {
+        margin-top: 10px;
+    }
+
+    /* Adjust social media icons size */
+    footer .nav img {
+        width: 24px; /* Reduce the icon size */
+    }
+
+    /* Adjust spacing between the social media icons */
+    footer .nav li {
+        margin-left: 10px; /* Reduce space between icons */
+    }
+
+    /* Adjust the positioning of "Designed by EngageX" text */
+    footer span.d-none.d-md-inline {
+        margin-top: 15px;
+        font-size: 12px; /* Make "Designed by EngageX" smaller */
+    }
+}
